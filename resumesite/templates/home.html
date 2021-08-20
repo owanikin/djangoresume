@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ifeoluwa Oderinde - Resume</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Ifeoluwa Oderinde's Resume"/>
+<meta charset="UTF-8"> 
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{% static 'images/headshot.jpg' %}" alt="Ifeoluwa Oderinde" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Ifeoluwa Oderinde</h1>
+			<h2 class="quickFade delayThree">Software Engineer</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>e: <a href="mailto:oderindeife@gmail.com" target="_blank">oderindeife@gmail.com</a></li>
+				<li>w: <a href="https://internship.zuri.team/">zuri.team</a></li>
+				<li>w: <a href="https://ingressive.org/">ingressive.org</a></li>
+				<li>w: <a href="https://hng.tech/">hng.tech</a></li>
+				<li>m: 08031887277</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>I am a creative software engineer, who loves using technologies to build web and mobile interfaces. I am passionate about expanding what is possible with code in order to make life more efficient.
+						Ifeoluwa is also a budding entrepreneur who has exhibited remarkable commitment and genuine interest in using technology to help shape business decisions and improve commercial processes in sub-Saharan Africa.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+			
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Projects</h1>
+			</div>
+			
+			<div class="sectionContent">
+
+				<article>
+					<h2><a href="https://tedxeastlegon.com/">TEDxEastLegon - The Future We See</a></h2>
+					<p class="subDetails">December 2019 - June 2020</p>
+					<p>We brought speakers from across the world to spark thought provoking
+						conversations that unleash fresh ideas and harness new inspirations.</p>
+				</article>
+
+				<article>
+					<h2><a href="https://getcredia.com/">CREDIA — Powering African Businesses With Access to Finance</a></h2>
+					<p class="subDetails">August 2019 - August 2020</p>
+					<p>We connect businesses to a variety of financing options with one application.
+						The financiers list their requirements for businesses to get financing from them, we use these requirements to pre-vet the businesses before matching them to the right financier that meets their funding needs.</p>
+				</article>
+
+				<article>
+					<h2>Freelancing</h2>
+					
+						<li><a href="https://covid-19-tracker-639ae.web.app/">Covid-19 pageTracker</a></li><br>
+						<li><a href="https://facebook-clone-14694.web.app/">Facebook Clone</a></li>
+					<br>
+				</article>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Stack</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>JavaScript (MERN)</li>
+					<li>Tailwind, Bootstrap, Material-UI</li>
+					<li>Python, Django</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Adekunle Ajasin University, Ondo State</h2>
+					<p class="subDetails">BSC</p>
+					<p class="subDetails">February 2011 - March 2015</p>
+					<p>Business Administration & Management</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Have something to say? Let's Talk!</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<form class="" method="post">
+						{% csrf_token %}
+						<div class="form-group">
+							<label for="fname">Your Name</label>
+							<input name="name" type="text" id="fname" class="form-control" placeholder="Please enter your Name" aria-label="Your Name"><br>
+							  
+							<label for="exampleInputEmail1">Email address</label>
+							  <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your email"><br>
+							
+							<label for='subject'>Subject</label>
+							<textarea name="subject" class="form-control" name="subject" id="subject" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</form>
+				</article>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Proudly Sponsored by: </h1>
+			</div>
+			
+			<div class="sectionContent">
+				<div id="headshot" class="quickFade">
+					<img src="{% static 'images/ingressive.jpg' %}" alt="Ifeoluwa Oderinde" />
+				</div>
+				<div id="headshot" class="quickFade">
+					<img src="{% static 'images/hng.jpg' %}" alt="Ifeoluwa Oderinde" />
+				</div>
+				<div id="headshot" class="quickFade">
+					<img src="{% static 'images/zuri.jpg' %}" alt="Ifeoluwa Oderinde" />
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+	</div>
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
